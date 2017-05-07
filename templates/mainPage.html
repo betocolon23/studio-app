@@ -1,0 +1,92 @@
+
+      <div class="container-fluid bg-3 text-center">
+          <h1 style="color:lightgray;">GALERIA</h1><br>
+          <div class="row">
+              <div class="col-sm-4">
+                  <p style="color:lightgray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="col-sm-4">
+                  <p style="color:lightgray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="col-sm-4">
+                  <p style="color:lightgray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+          </div>
+      </div>
+
+      <hr>
+
+<!--Llamada para carousel:  -->
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $("#CarouselTemplate").load("html/CarouselTemplate.html");
+        });
+      </script>
+    
+      <!--Carousel: Galeria para Inicio-->
+
+      <div id="CarouselTemplate"></div>
+
+
+      <!-- Container (Contact Section) -->
+      <div id="contact" class="container-fluid bg-grey" style="background-color:darkgray;">
+          <h1 class="text-center">CONTACT</h1><br /><br />
+          <div class="row">
+
+              <div class="col-sm-5">
+                  <p>Contact us and we'll get back to you within 24 hours.</p>
+                  <p><span class="glyphicon glyphicon-map-marker"></span> Trujillo Alto, PR</p>
+                  <p><span class="glyphicon glyphicon-phone"></span> (787)-000-0000</p>
+                  <p><span class="glyphicon glyphicon-envelope"></span> monkeystudiopr@gmail.com</p>
+              </div>
+              <div class="col-sm-7 slideanim">
+                  <div class="row">
+                      <div class="col-sm-6 form-group">
+                          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                      </div>
+                      <div class="col-sm-6 form-group">
+                          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                      </div>
+                  </div>
+                  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                  <div class="row">
+                      <div class="col-sm-12 form-group">
+                          <!-- Trigger the modal with a button -->
+                          <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#myModal">Send</button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal" role="dialog">
+                              <div class="modal-dialog">
+
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h4 class="modal-title">Informacion Completa</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                          <p>Sus datos han sido guardado exitosamente</p>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      </div>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <footer class="container-fluid text-center" s>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <i>copyright</i>
+          </div>
+          <div class="panel-footer"><i> Property of Alberto Colon and Gabriel Acosta </i> </div>
+          </div>
+      </footer>
+

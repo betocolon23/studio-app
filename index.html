@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<!--python -m SimpleHTTPServer -->
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <title>Monkey Studio</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+      <link rel="stylesheet" type="text/css" href="{{url_for('static'), filename='mainStyle.css'}}" />
+      <script src="{{url_for('static'), filename='routing.js'}}"></script>
+      <script>
+        $(document).ready(function () {
+            $("#mainPage").load("templates/mainPage.html");
+            $("#navSection").load("templates/navbarTemplate.html");
+            $("#CarouselTemplate").load("templates/CarouselTemplate.html");
+            $("#loginModal").load("templates/loginModal.html");
+            $("#outlet").load("templates/mainPage.html")
+        });
+      </script>
+  </head>
+  <body>
+    <!-- Navigation Bar-->
+    <div id="navSection"></div>
+    <!--Html Function Injection: (Routing function)  -->
+    <div id="outlet"></div>
+  </body>
+</html>
