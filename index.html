@@ -13,11 +13,11 @@
       <script src="{{url_for('static'), filename='routing.js'}}"></script>
       <script>
         $(document).ready(function () {
-            $("#mainPage").load("templates/mainPage.html");
-            $("#navSection").load("templates/navbarTemplate.html");
-            $("#CarouselTemplate").load("templates/CarouselTemplate.html");
-            $("#loginModal").load("templates/loginModal.html");
-            $("#outlet").load("templates/mainPage.html")
+            $("#mainPage").load("{{url_for('templates'), filename='mainPage.html'}}");
+            $("#navSection").load("{{url_for('templates'), filename='navbarTemplate.html'}}");
+            $("#CarouselTemplate").load("{{url_for('templates'), filename='CarouselTemplate.html'}}");
+            $("#loginModal").load("{{url_for('templates'), filename='loginModal.html'}}");
+            $("#outlet").load("{{url_for('templates'), filename='mainPage.html'}}");
         });
       </script>
   </head>
